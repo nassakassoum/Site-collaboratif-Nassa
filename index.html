@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site collaboratif Nassa</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Site Collaboratif</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: "Times New Roman", sans-serif;
+      padding: 30px;
+      background-color: #edffe0;
+      margin: 0;
+    }
+
+    .menu-container {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .dropdown {
+      display: inline-block;
+      position: relative;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f0f0f0;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 10px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #c0ffc0;
+    }
+
+    .dropbtn {
+      background-color: #a8f0a5;
+      color: black;
+      padding: 10px 16px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <h1>Bienvenue sur le site collaboratif de Nassa</h1>
-    <p>Ce site est en construction.</p>
+
+  <!-- CONTENEUR CENTRÉ POUR LE BOUTON -->
+  <div class="menu-container">
+    <div class="dropdown">
+      <button class="dropbtn">Menu</button>
+      <div class="dropdown-content">
+        <a href="Présentation site.html">À propos</a>
+        <a href="participants.html">Liste des participants</a>
+      </div>
+    </div>
+  </div>
+
+  <header>
+    <h1>Bienvenue sur le site collaboratif des étudiants</h1>
+    <h1>IFOAD Session 2025</h1>
+  </header>
+
 </body>
 </html>
